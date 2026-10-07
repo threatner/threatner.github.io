@@ -1,0 +1,5 @@
+# Public pages for threatner's projects, built by GitHub Pages (Jekyll).
+# The projects' code lives in their own repositories.
+markdown: kramdown
+exclude:
+  - README.md
