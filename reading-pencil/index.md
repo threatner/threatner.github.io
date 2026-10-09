@@ -9,6 +9,8 @@ permalink: /reading-pencil/
 
 <p class="lede">A small pencil that keeps your place, like a finger under the line. It moves along the line you are reading at your pace, then down to the next, and remembers where you stopped.</p>
 
+<p class="add"><a href="https://chromewebstore.google.com/detail/pcabpinceobleghkogemdmjkiijoecgg">Add Reading Pencil to Chrome</a> <span>Free, from the Chrome Web Store</span></p>
+
 ## Start it
 
 On a page you want to read, start it in one of three ways:
