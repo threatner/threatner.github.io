@@ -7,7 +7,7 @@ permalink: /reading-pencil/privacy/
 
 # Reading Pencil: Privacy Policy
 
-_Last updated: 7 October 2026_
+_Last updated: 10 October 2026_
 
 Reading Pencil is a browser extension that draws a small pencil under the line
 you are reading. This policy says exactly what it does with your data. The
@@ -33,6 +33,8 @@ extension storage (`chrome.storage.local`), on your computer only:
     parameters (such as `utm_source`) and parameters that carry secrets
     (such as tokens, passwords, signatures, session IDs or email
     addresses) removed; very long addresses are not kept at all;
+  - the page's title, so the list can show it by name (a title holding an
+    email address is not kept);
   - the first 80 characters of the paragraph you were on, used only to find
     that paragraph again when you come back;
   - how far into that paragraph you were, and when.
