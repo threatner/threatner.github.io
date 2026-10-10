@@ -42,7 +42,7 @@ The toolbar window holds a few choices: your pace (Slow, Average, Fast or a spee
 ## Good to know
 
 - It only appears when you start it, and only on that page. A reload or a new page puts it away.
-- It reads PDFs too. Chrome's own PDF viewer lets no extension in, so starting the pencil on a PDF opens it in Reading Pencil's own page, where it reads one column at a time. A PDF on your computer is chosen there by hand.
+- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page. For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**.
 - It can't run on Chrome's own pages or the Chrome Web Store.
 - To change the shortcut, open `chrome://extensions/shortcuts` in Chrome.
 

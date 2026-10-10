@@ -11,16 +11,16 @@ _Last updated: 10 October 2026_
 
 Reading Pencil is a browser extension that draws a small pencil under the line
 you are reading. This policy says exactly what it does with your data. The
-short version: **nothing leaves your computer.**
+short version: **nothing you read leaves your computer.**
 
 ## What Reading Pencil collects
 
 Nothing is collected, sent or shared. Reading Pencil has no analytics, no
 crash reporting, no advertising, no accounts and no servers. It makes one
-kind of network request only: when you start the pencil on a PDF, it fetches
-that PDF again from the address it is already at, to show it in a page of its
-own (see "PDFs" below). That request goes only to the website the PDF comes
-from.
+kind of network request only: when you start the pencil on a PDF, or open one
+from "Where you left off", it downloads that PDF from its own address, to show
+it in a page of its own (see "PDFs" below). That request goes only to the
+website the PDF comes from.
 
 ## What it stores on your device
 
@@ -55,11 +55,13 @@ card when one is shown), as they can see anything else on their page.
 
 Chrome's own PDF viewer lets no extension in, so when you start the pencil on
 a PDF, Reading Pencil opens it in a page of its own, inside the extension. To
-do that, it downloads the PDF from the same address your browser just opened,
-with your browser's cookies for that website, as your browser itself would
-(so a PDF you had to sign in for still opens). The PDF is shown and read on
-your computer. It is not stored, and it is not sent anywhere else. A PDF you
-choose from your computer is read from that file and never leaves it.
+do that, it downloads the PDF from its own address (the one your browser
+opened, or the one kept in "Where you left off"), with your browser's cookies
+for that website, as your browser itself would (so a PDF you had to sign in
+for still opens). The PDF is shown and read on your computer. It is not
+stored, and it is not sent anywhere else. A PDF you choose from your computer
+is read from that file and never leaves it. PDFs are not opened from Incognito
+windows.
 
 ## How to remove it
 
