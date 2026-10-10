@@ -31,9 +31,10 @@ extension storage (`chrome.storage.local`), on your computer only:
   highlight strength, and whether to keep to the article.
 - **Where you left off:** for each long page you have started reading with
   the pencil (at most 50; the oldest are removed first):
-  - the page's address (for a PDF, the PDF's address; and, if the site
-    changed its address while you read, up to three other addresses of the
-    same article), with tracking
+  - the page's address (for a PDF, the PDF's address; for a PDF you chose
+    from your computer, its file name and size, not the folder it is in;
+    and, if the site changed its address while you read, up to three other
+    addresses of the same article), with tracking
     parameters (such as `utm_source`) and parameters that carry secrets
     (such as tokens, passwords, signatures, session IDs or email
     addresses) removed; very long addresses are not kept at all;
@@ -60,8 +61,9 @@ opened, or the one kept in "Where you left off"), with your browser's cookies
 for that website, as your browser itself would (so a PDF you had to sign in
 for still opens). The PDF is shown and read on your computer. It is not
 stored, and it is not sent anywhere else. A PDF you choose from your computer
-is read from that file and never leaves it. PDFs are not opened from Incognito
-windows.
+is read from that file and never leaves it; your place in it is kept by its
+name and size, so choosing the same file again takes you back to your line.
+PDFs are not opened from Incognito windows.
 
 ## How to remove it
 
