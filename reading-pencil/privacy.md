@@ -38,6 +38,8 @@ extension storage (`chrome.storage.local`), on your computer only:
     parameters (such as `utm_source`) and parameters that carry secrets
     (such as tokens, passwords, signatures, session IDs or email
     addresses) removed; very long addresses are not kept at all;
+  - the page's title, so the list can show it by name (a title holding an
+    email address is not kept);
   - the first 80 characters of the paragraph you were on, used only to find
     that paragraph again when you come back;
   - how far into that paragraph you were, and when.
