@@ -7,7 +7,7 @@ permalink: /reading-pencil/privacy/
 
 # Reading Pencil: Privacy Policy
 
-_Last updated: 10 October 2026_
+_Last updated: 13 October 2026_
 
 Reading Pencil is a browser extension that draws a small pencil under the line
 you are reading. This policy says exactly what it does with your data. The
@@ -42,17 +42,39 @@ extension storage (`chrome.storage.local`), on your computer only:
     email address is not kept);
   - the first 80 characters of the paragraph you were on, used only to find
     that paragraph again when you come back;
-  - how far into that paragraph you were, and when.
+  - how far into that paragraph you were, and when;
+  - once you have read 20 lines of it with the pencil, a random name for
+    that article (made up on your computer, not taken from the page), so
+    that reading it again another day adds to the same book on your shelf
+    (below) instead of counting it twice.
+- **Your reading:** numbers, to show you what you have read with the
+  pencil: how many articles, lines and (roughly) words, how long, on how
+  many days (with the date of the last), and how many you read to the end;
+  and, for your shelf, each article's length in words, whether you finished
+  it, and its random name, for at most the last 60. Never which pages,
+  sites or words.
 - **Whether you have seen the short how-to hint** (a count, so it stops after
-  a few times).
+  a few times), and **whether you have answered the review question**, so it
+  is asked at most twice.
 
 Nothing is stored for pages you read in an Incognito window.
 
 This information is never transmitted anywhere, and websites cannot read it
-from the extension's storage. It is used only to draw the pencil and to put
-it back where you left off. While the pencil is drawn on a page, that page's
-own scripts can see it there (its position and colour, and the "continue"
-card when one is shown), as they can see anything else on their page.
+from the extension's storage. It is used only to draw the pencil, to put it
+back where you left off, and to show you your own reading. While the pencil
+is drawn on a page, that page's own scripts can see it there (its position
+and colour, and the "continue" card, the review question, or a note such as
+"You've read 10 articles" when one is shown), as they can see anything else
+on their page.
+
+## The review question
+
+After you have read three articles with the pencil, Reading Pencil asks
+once, at the end of an article or in its toolbar window, whether you would
+leave a review (and once more after ten, if you said "Not now"; then never).
+If you choose **Leave a review**, it opens the Chrome Web Store's reviews
+page for Reading Pencil in a new tab, as a link would. The page you were
+reading is not told, and nothing about your reading is sent.
 
 ## PDFs
 
@@ -71,7 +93,8 @@ PDFs are not opened from Incognito windows.
 
 - Open the toolbar popup → **Where you left off** to forget one page or all of
   them.
-- Uninstalling Reading Pencil removes everything it stored.
+- Uninstalling Reading Pencil removes everything it stored, your reading
+  numbers included.
 
 ## Permissions, and why
 
@@ -81,7 +104,8 @@ PDFs are not opened from Incognito windows.
   PDF, to download that PDF from its own address and show it in Reading
   Pencil's page. Page content is read in your browser to measure lines; it is
   never stored (apart from the 80-character excerpt above) or sent anywhere.
-- **storage:** to keep your settings and places on your device.
+- **storage:** to keep your settings, your places and your reading counts on
+  your device.
 - **activeTab** and **scripting:** to place the pencil on a tab where it
   isn't running yet, when you ask for it there; and once, when the extension
   is installed, updated or switched back on, to give the web pages already

@@ -17,7 +17,7 @@ On a page you want to read, start it in one of three ways:
 
 - Click the Reading Pencil icon in Chrome's toolbar and turn the switch on.
 - Press <kbd>Alt+Shift+R</kbd> (on a Mac, <kbd>Control+Shift+R</kbd>).
-- Right-click a paragraph and choose **Start reading here**. On a Mac trackpad, click with two fingers.
+- Right-click a paragraph and choose **Start reading here**: it starts reading from there. On a Mac trackpad, click with two fingers.
 
 Can't see the icon? Click the puzzle piece in Chrome's toolbar, then the pin next to Reading Pencil.
 
@@ -35,6 +35,12 @@ Can't see the icon? Click the puzzle piece in Chrome's toolbar, then the pin nex
 
 On a long page, your place is kept. Start the pencil there again and it waits on your line. Or click the Reading Pencil icon, choose **Where you left off** and pick the page: it opens at your line, and <kbd>Space</kbd> reads on.
 
+## Your reading
+
+Click the Reading Pencil icon and choose **Your reading**: a small shelf with a book for each article you've read with the pencil, taller for a longer one, with how many pages of a book that comes to, the time, and how many you read to the very end. It's counted on your computer only, as numbers: never which pages.
+
+After a few articles, Reading Pencil asks once whether you'd leave a review. "Not now" is fine: it asks once more later, then never.
+
 ## Make it yours
 
 The toolbar window holds a few choices: your pace (Slow, Average, Fast or a speed of your own), a pencil or a plain line, six colours, which hand holds the pencil, how strongly the line is lit, and whether it keeps to the article.
@@ -42,6 +48,8 @@ The toolbar window holds a few choices: your pace (Slow, Average, Fast or a spee
 ## Good to know
 
 - It only appears when you start it, and only on that page. A reload or a new page puts it away.
+- It keeps to the article: menus, sidebars, comments, and sign-up boxes inside a story are left out. On news sites that load the next story as you scroll, it stops at the end of yours.
+- It reads many languages, right-to-left ones too.
 - It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page. For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**.
 - It can't run on Chrome's own pages or the Chrome Web Store.
 - To change the shortcut, open `chrome://extensions/shortcuts` in Chrome.
