@@ -7,7 +7,7 @@ permalink: /reading-pencil/privacy/
 
 # Reading Pencil: Privacy Policy
 
-_Last updated: 13 October 2026_
+_Last updated: 14 October 2026_
 
 Reading Pencil is a browser extension that draws a small pencil under the line
 you are reading. This policy says exactly what it does with your data. The
@@ -15,12 +15,17 @@ short version: **nothing you read leaves your computer.**
 
 ## What Reading Pencil collects
 
-Nothing is collected, sent or shared. Reading Pencil has no analytics, no
-crash reporting, no advertising, no accounts and no servers. It makes one
-kind of network request only: when you start the pencil on a PDF, or open one
-from "Where you left off", it downloads that PDF from its own address, to show
-it in a page of its own (see "PDFs" below). That request goes only to the
-website the PDF comes from.
+Nothing is collected, sent or shared on its own. Reading Pencil has no
+analytics, no crash reporting, no advertising, no accounts and no servers.
+It makes two kinds of network request only:
+
+- when you start the pencil on a PDF, or open one from "Where you left off",
+  it downloads that PDF from its own address, to show it in a page of its own
+  (see "PDFs" below). That request goes only to the website the PDF comes
+  from;
+- when you write feedback on its feedback page and press **Send**, it sends
+  what that page shows to the developer (see "Feedback" below). Nothing is
+  sent until you press Send.
 
 ## What it stores on your device
 
@@ -42,7 +47,8 @@ extension storage (`chrome.storage.local`), on your computer only:
     email address is not kept);
   - the first 80 characters of the paragraph you were on, used only to find
     that paragraph again when you come back;
-  - how far into that paragraph you were, and when;
+  - how far into that paragraph you were (in a PDF, also the page it is
+    on), and when;
   - once you have read 20 lines of it with the pencil, a random name for
     that article (made up on your computer, not taken from the page), so
     that reading it again another day adds to the same book on your shelf
@@ -76,6 +82,34 @@ If you choose **Leave a review**, it opens the Chrome Web Store's reviews
 page for Reading Pencil in a new tab, as a link would. The page you were
 reading is not told, and nothing about your reading is sent.
 
+## Feedback
+
+The toolbar window's **Feedback** link opens a page inside the extension
+where you can tell the developer what's wrong, or what you'd like. Nothing
+on it is sent until you press **Send**. Then these go, through a Google Form
+the developer reads (Google's own privacy policy applies to it):
+
+- what kind of message it is, and what you wrote;
+- the pages you name: the list starts with the address of the page you were
+  on, cleaned as for "Where you left off" (tracking parameters and anything
+  that looks like a token, a password or an email address removed, and the
+  address cut short where one appears in its path); you can remove it, add
+  other links (cleaned the same way) or leave none. Opened from an Incognito
+  window, the list starts empty: the private page is not filled in;
+- a way to reply, only if you give one (an email address or an X handle);
+- a few details that help find a problem, listed on the page under "See them" before you send: the versions of Reading Pencil, your browser and
+  your system, your browser's language, your screen's size, whether dark mode
+  and reduced motion are on, your Reading Pencil settings, and what the
+  toolbar window said about the page (for example "Following 13 lines on this
+  page"). Never what you read, your places or your reading numbers.
+
+Your Google account, if you are signed in to one, is not sent with it.
+
+If you remove Reading Pencil, Chrome opens the same form in a new tab, with
+"I removed it", the version of Reading Pencil and your browser's name and
+version already filled in, so you can say why if you like. Nothing is sent
+unless you press Submit there.
+
 ## PDFs
 
 Chrome's own PDF viewer lets no extension in, so when you start the pencil on
@@ -104,6 +138,8 @@ PDFs are not opened from Incognito windows.
   PDF, to download that PDF from its own address and show it in Reading
   Pencil's page. Page content is read in your browser to measure lines; it is
   never stored (apart from the 80-character excerpt above) or sent anywhere.
+  The same access lets the feedback page send your message to the
+  developer's Google Form when you press Send.
 - **storage:** to keep your settings, your places and your reading counts on
   your device.
 - **activeTab** and **scripting:** to place the pencil on a tab where it
@@ -117,7 +153,8 @@ PDFs are not opened from Incognito windows.
 
 ## Children
 
-Reading Pencil collects no data from anyone, including children.
+Reading Pencil collects no data from anyone, including children, apart from
+feedback someone chooses to send.
 
 ## Changes
 

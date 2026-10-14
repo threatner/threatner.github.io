@@ -50,14 +50,14 @@ The toolbar window holds a few choices: your pace (Slow, Average, Fast or a spee
 - It only appears when you start it, and only on that page. A reload or a new page puts it away.
 - It keeps to the article: menus, sidebars, comments, and sign-up boxes inside a story are left out. On news sites that load the next story as you scroll, it stops at the end of yours.
 - It reads many languages, right-to-left ones too.
-- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page. For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**.
+- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page, where the bar shows the page you're on (type a number to go to a page). For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**.
 - It can't run on Chrome's own pages or the Chrome Web Store.
 - To change the shortcut, open `chrome://extensions/shortcuts` in Chrome.
 
 ## Private
 
-Nothing you read leaves your computer: no account, no tracking, no ads. Read the [privacy policy](/reading-pencil/privacy/).
+Nothing you read leaves your computer: no account, no tracking, no ads. Feedback leaves it only if you write it and press Send. Read the [privacy policy](/reading-pencil/privacy/).
 
-## Questions
+## Questions, problems, ideas
 
-Message [@threatner_ on X](https://x.com/threatner_).
+Click the Reading Pencil icon, then **Feedback** at the foot of the window: tell me what's wrong, or what you'd like, in a line or two. Or message [@threatner_ on X](https://x.com/threatner_).
