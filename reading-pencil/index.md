@@ -43,7 +43,7 @@ After a few articles, Reading Pencil asks once whether you'd leave a review. "No
 
 ## Make it yours
 
-The toolbar window holds a few choices: your pace (Slow, Average, Fast or a speed of your own), a pencil or a plain line, six colours, which hand holds the pencil, how strongly the line is lit, and whether it keeps to the article.
+The toolbar window holds a few choices: your pace (Slow, Average, Fast or a speed of your own), a pencil or a plain line, six colors, which hand holds the pencil, how strongly the line is lit, and whether it keeps to the article.
 
 ## Good to know
 

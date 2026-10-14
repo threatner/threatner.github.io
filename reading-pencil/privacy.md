@@ -32,7 +32,7 @@ It makes two kinds of network request only:
 Reading Pencil keeps a small amount of information in your browser's own
 extension storage (`chrome.storage.local`), on your computer only:
 
-- **Your settings:** your reading pace, Pencil or Line, which hand, colour,
+- **Your settings:** your reading pace, Pencil or Line, which hand, color,
   highlight strength, and whether to keep to the article.
 - **Where you left off:** for each long page you have started reading with
   the pencil (at most 50; the oldest are removed first):
@@ -69,7 +69,7 @@ This information is never transmitted anywhere, and websites cannot read it
 from the extension's storage. It is used only to draw the pencil, to put it
 back where you left off, and to show you your own reading. While the pencil
 is drawn on a page, that page's own scripts can see it there (its position
-and colour, and the "continue" card, the review question, or a note such as
+and color, and the "continue" card, the review question, or a note such as
 "You've read 10 articles" when one is shown), as they can see anything else
 on their page.
 
