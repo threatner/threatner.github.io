@@ -105,10 +105,13 @@ the developer reads (Google's own privacy policy applies to it):
 
 Your Google account, if you are signed in to one, is not sent with it.
 
-If you remove Reading Pencil, Chrome opens the same form in a new tab, with
-"I removed it", the version of Reading Pencil and your browser's name and
-version already filled in, so you can say why if you like. Nothing is sent
-unless you press Submit there.
+If you remove Reading Pencil, Chrome opens a goodbye page on Reading
+Pencil's help site (threatner.github.io), which asks why, if you'd like to
+say. Its address tells the page the version of Reading Pencil you had and
+your browser's name and version. Nothing is sent unless you press Send
+there; then what you chose and wrote, with that version and browser, goes
+to a Google Form of its own (not the feedback form), and nothing else.
+The page has no analytics and sets no cookies.
 
 ## PDFs
 
