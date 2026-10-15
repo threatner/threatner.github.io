@@ -23,7 +23,11 @@ Reading Pencil's help page (`reading-pencil/index.md`) and privacy policy
 ## Layout
 
 - `_layouts/page.html`: the one page design (paper look, the pencil logo).
-- `index.html`: forwards the root to `/reading-pencil/`.
+- `index.html`: the home page, one card per extension (Reading Pencil, SnapTabs),
+  standalone (not the Reading Pencil layout); `icons/` holds SnapTabs' icon.
+- `googlee16cd5b2f22df300.html`: Google Search Console's ownership file, which
+  makes this site the verified Official URL on both store listings. Never
+  delete it (Google re-checks it).
 - `_config.yml` excludes `README.md` and this file from the site.
 
 After a push, wait for the Pages build and check both pages load

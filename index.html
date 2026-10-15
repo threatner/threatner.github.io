@@ -2,11 +2,68 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Reading Pencil</title>
-<meta http-equiv="refresh" content="0; url=/reading-pencil/">
-<link rel="canonical" href="https://threatner.github.io/reading-pencil/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>threatner: small Chrome extensions</title>
+<meta name="description" content="Free, private Chrome extensions by threatner: Reading Pencil, a reading ruler that keeps your place, and SnapTabs, which saves and restores your tabs.">
+<link rel="canonical" href="https://threatner.github.io/">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #f6f3ea; color: #26251f; font: 17px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  .sheet { max-width: 720px; margin: 40px auto 56px; background: #fcfcf9; border: 1px solid #e8e5da; border-radius: 14px; box-shadow: 0 2px 6px rgba(38,37,31,.06), 0 8px 22px rgba(38,37,31,.08); padding: 40px 48px 32px; }
+  h1, h2 { font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif; line-height: 1.25; }
+  h1 { font-size: 34px; margin: 0 0 8px; text-wrap: balance; }
+  .lede { font-size: 19px; color: #4a4840; margin: 0 0 26px; }
+  a { color: #8a5a00; text-underline-offset: 3px; }
+  .item { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid #efede4; }
+  .item img { width: 64px; height: 64px; }
+  .item h2 { font-size: 23px; margin: 0 0 4px; }
+  .item p { margin: 0 0 12px; color: #4a4840; }
+  .links { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; font-size: 15px; }
+  .links .add { display: inline-block; background: #26251f; color: #fcfcf9; text-decoration: none; font-weight: 600; padding: 8px 18px; border-radius: 999px; }
+  .links .add:hover { background: #000; }
+  footer { margin-top: 18px; padding-top: 16px; border-top: 1px solid #efede4; font-size: 14px; color: #6b6960; }
+  footer a { color: #6b6960; }
+  @media (max-width: 640px) {
+    .sheet { margin: 0; border-radius: 0; border: 0; padding: 26px 20px; }
+    h1 { font-size: 28px; }
+    .item { grid-template-columns: 48px 1fr; gap: 14px; }
+    .item img { width: 48px; height: 48px; }
+  }
+</style>
 </head>
 <body>
-<p><a href="/reading-pencil/">Reading Pencil</a></p>
+<main class="sheet">
+  <h1>Small Chrome extensions, made with care</h1>
+  <p class="lede">Free, private, and built to do one thing well.</p>
+
+  <section class="item">
+    <img src="/reading-pencil/icon128.png" alt="">
+    <div>
+      <h2>Reading Pencil</h2>
+      <p>A reading ruler that glides under each line at your pace and remembers where you stopped, on web pages and in PDFs.</p>
+      <div class="links">
+        <a class="add" href="https://chromewebstore.google.com/detail/pcabpinceobleghkogemdmjkiijoecgg">Add to Chrome</a>
+        <a href="/reading-pencil/">How to use it</a>
+        <a href="/reading-pencil/privacy/">Privacy</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="item">
+    <img src="/icons/snaptabs-128.png" alt="">
+    <div>
+      <h2>SnapTabs</h2>
+      <p>Save, restore and manage your browser tabs, tab groups included, with crash-safe auto-save.</p>
+      <div class="links">
+        <a class="add" href="https://chromewebstore.google.com/detail/cgkpmhbpejmdjgeipmkbihbjcniflpnl">Add to Chrome</a>
+        <a href="https://github.com/threatner/SnapTabs">Source on GitHub</a>
+        <a href="https://github.com/threatner/SnapTabs/blob/main/PRIVACY.md">Privacy</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>Contact: <a href="https://x.com/threatner_">@threatner_ on X</a></footer>
+</main>
 </body>
 </html>
