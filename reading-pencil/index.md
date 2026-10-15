@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Reading Pencil: a reading ruler that keeps your place"
-description: "How to use Reading Pencil, the Chrome extension that moves a small pencil under the line you are reading, at your pace, and remembers where you stopped."
+title: "Reading Pencil: a free reading ruler for Chrome, for web pages and PDFs"
+description: "A small pencil keeps your place under the line you're reading, moves at your pace and remembers where you stopped, on web pages and in any PDF. Free, no account, no tracking."
 permalink: /reading-pencil/
 ---
 
@@ -50,7 +50,7 @@ The toolbar window holds a few choices: your pace (Slow, Average, Fast or a spee
 - It only appears when you start it, and only on that page. A reload or a new page puts it away.
 - It keeps to the article: menus, sidebars, comments, and sign-up boxes inside a story are left out. On news sites that load the next story as you scroll, it stops at the end of yours.
 - It reads many languages, right-to-left ones too.
-- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page, where the bar shows the page you're on (type a number to go to a page). For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**.
+- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page, where the bar shows the page you're on (type a number to go to a page). For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**. More in [Reading PDFs with Reading Pencil](/reading-pencil/pdf/).
 - It can't run on Chrome's own pages or the Chrome Web Store.
 - To change the shortcut, open `chrome://extensions/shortcuts` in Chrome.
 
@@ -61,3 +61,14 @@ Nothing you read leaves your computer: no account, no tracking, no ads. Feedback
 ## Questions, problems, ideas
 
 Click the Reading Pencil icon, then **Feedback** at the foot of the window: tell me what's wrong, or what you'd like, in a line or two. Or message [@threatner_ on X](https://x.com/threatner_).
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication",
+ "name":"Reading Pencil: Reading Ruler & Line Guide",
+ "description":"A reading ruler for Chrome: a small pencil under the line you're reading moves at your pace and remembers where you stopped, on web pages and in PDFs.",
+ "applicationCategory":"BrowserApplication","operatingSystem":"Chrome",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+ "url":"https://threatner.github.io/reading-pencil/",
+ "installUrl":"https://chromewebstore.google.com/detail/pcabpinceobleghkogemdmjkiijoecgg",
+ "author":{"@type":"Person","name":"threatner","sameAs":"https://x.com/threatner_"}}
+</script>

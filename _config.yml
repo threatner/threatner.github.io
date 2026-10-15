@@ -4,3 +4,33 @@ markdown: kramdown
 exclude:
   - README.md
   - CLAUDE.md
+
+# For search engines and link previews: jekyll-seo-tag writes each page's
+# description, canonical address and share card from its front matter;
+# jekyll-sitemap lists the pages at /sitemap.xml (submitted in Search
+# Console). Both run on GitHub Pages as they are.
+title: threatner
+description: Small Chrome extensions, made with care. Free, private, and built to do one thing well.
+url: https://threatner.github.io
+author: threatner
+twitter:
+  username: threatner_
+  card: summary_large_image
+social:
+  name: threatner
+  links:
+    - https://x.com/threatner_
+    - https://github.com/threatner
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /reading-pencil/share.png
+  # Google's ownership file is no page anyone should land on.
+  - scope:
+      path: googlee16cd5b2f22df300.html
+    values:
+      sitemap: false

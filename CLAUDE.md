@@ -28,7 +28,16 @@ Reading Pencil's help page (`reading-pencil/index.md`) and privacy policy
 - `googlee16cd5b2f22df300.html`: Google Search Console's ownership file, which
   makes this site the verified Official URL on both store listings. Never
   delete it (Google re-checks it).
-- `_config.yml` excludes `README.md` and this file from the site.
+- `_config.yml` excludes `README.md` and this file from the site, and turns
+  on `jekyll-seo-tag` (`{% seo title=false %}` in each page's head: its
+  description, canonical address and share card) and `jekyll-sitemap`
+  (`/sitemap.xml`, submitted in Search Console). Every page shares
+  `reading-pencil/share.png` (1200×630, drawn by the extension repo's
+  `npm run store`) unless its front matter names another `image`.
+- `reading-pencil/pdf.md`: "A reading ruler for PDFs", one page per
+  question people search for (research in the extension repo,
+  `docs/research/store-seo-2026-10-15.md`). Keep it true of the current
+  build, like the help page.
 - Every link to a Chrome Web Store listing carries UTM tags
   (`?utm_source=threatner.github.io&utm_medium=website&utm_campaign=<where>`,
   written `&amp;` in HTML): `home`, `help-page`, `footer`, `goodbye`. The
