@@ -29,6 +29,11 @@ Reading Pencil's help page (`reading-pencil/index.md`) and privacy policy
   makes this site the verified Official URL on both store listings. Never
   delete it (Google re-checks it).
 - `_config.yml` excludes `README.md` and this file from the site.
+- Every link to a Chrome Web Store listing carries UTM tags
+  (`?utm_source=threatner.github.io&utm_medium=website&utm_campaign=<where>`,
+  written `&amp;` in HTML): `home`, `help-page`, `footer`, `goodbye`. The
+  Developer Dashboard's Impressions tab shows store page views by them.
+  Nothing on this site tracks anyone; tag any new store link the same way.
 
 After a push, wait for the Pages build and check both pages load
 (`curl -sI https://threatner.github.io/reading-pencil/privacy/`).
