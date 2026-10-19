@@ -23,6 +23,11 @@ Reading Pencil's help page (`reading-pencil/index.md`) and privacy policy
 ## Layout
 
 - `_layouts/page.html`: the one page design (paper look, the pencil logo).
+- Favicons at the root, every page linking them: `favicon.ico` (16, 32 and 48),
+  `favicon.svg`, `favicon-96x96.png` (Google's search results want a multiple
+  of 48) and `apple-touch-icon.png` (180, on paper: iOS fills see-through
+  black). All Reading Pencil's logo, drawn by the extension repo's
+  `scripts/make-icons.mjs --svg N`.
 - `index.html`: the home page, one card per extension (Reading Pencil, SnapTabs),
   standalone (not the Reading Pencil layout); `icons/` holds SnapTabs' icon.
 - `googlee16cd5b2f22df300.html`: Google Search Console's ownership file, which
