@@ -27,6 +27,7 @@ Can't see the icon? Click the puzzle piece in Chrome's toolbar, then the pin nex
 | --- | --- |
 | <kbd>Space</kbd> | start or pause the pencil |
 | <kbd>↑</kbd> <kbd>↓</kbd> | a line back, or a line on |
+| <kbd>−</kbd> <kbd>+</kbd> | a little slower or faster (10 words a minute a press) |
 | Click a line | move the pencil there |
 | <kbd>Esc</kbd> | put it down, or bring it back |
 | <kbd>Alt+Shift+R</kbd> | turn it off on this page |
@@ -45,12 +46,17 @@ After a few articles, Reading Pencil asks once whether you'd leave a review. "No
 
 The toolbar window holds a few choices: your pace (Slow, Average, Fast or a speed of your own), a pencil or a plain line, six colors, which hand holds the pencil, how strongly the line is lit, and whether it keeps to the article.
 
+Not sure of your pace? The welcome page that opens when you add it has **Find my pace**: read a short passage, press Done, and it offers a pace a little under yours.
+
 ## Good to know
 
 - It only appears when you start it, and only on that page. A reload or a new page puts it away.
 - It keeps to the article: menus, sidebars, comments, and sign-up boxes inside a story are left out. On news sites that load the next story as you scroll, it stops at the end of yours.
-- It reads many languages, right-to-left ones too.
-- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page, where the bar shows the page you're on (type a number to go to a page). For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**. More in [Reading PDFs with Reading Pencil](/reading-pencil/pdf/).
+- It reads many languages, right-to-left ones too. Its own buttons and notes are in English, Spanish, Portuguese, German and French, in your browser's language.
+- **Google Docs:** turn it on in a doc and the doc opens in Google's own simple view of it, where the pencil can read. Your browser's Back button returns to the doc.
+- **Word documents on the web** (shared from OneDrive or SharePoint) are read where they are, through all their pages.
+- **Chats shared from ChatGPT and Claude**, and published Claude artifacts, are read from the start.
+- It reads PDFs too: turn it on in a PDF, and the PDF opens in Reading Pencil's own page, where the bar shows the page you're on (type a number to go to a page). PDFs in Google Drive, Dropbox and SharePoint open there too. For a PDF on your computer, click the Reading Pencil icon and choose **Read a PDF from your computer**. More in [Reading PDFs with Reading Pencil](/reading-pencil/pdf/).
 - It can't run on Chrome's own pages or the Chrome Web Store.
 - To change the shortcut, open `chrome://extensions/shortcuts` in Chrome.
 

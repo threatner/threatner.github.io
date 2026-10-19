@@ -26,6 +26,8 @@ Reading Pencil opens the PDF in a page of its own instead, inside the extension,
 2. Turn Reading Pencil on: click its icon and turn the switch on, or press <kbd>Alt+Shift+R</kbd> (on a Mac, <kbd>Control+Shift+R</kbd>). The PDF opens in Reading Pencil's page, and the pencil waits on the first line.
 3. Press <kbd>Space</kbd>. The pencil moves along the line at your pace, then down to the next. <kbd>Space</kbd> again pauses it.
 
+**A PDF in Google Drive, Dropbox or SharePoint:** open it as you would, and turn Reading Pencil on: it opens the file itself in its page. So does a PDF a website shows inside its page (a course's handout, a council's report).
+
 **A PDF on your computer:** click the Reading Pencil icon, choose **Read a PDF from your computer**, and pick the file. Chrome only lets an extension open files you choose yourself, which keeps your files safe.
 
 ## Two columns, in the right order
