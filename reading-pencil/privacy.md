@@ -7,7 +7,7 @@ permalink: /reading-pencil/privacy/
 
 # Reading Pencil: Privacy Policy
 
-_Last updated: 14 October 2026_
+_Last updated: 18 October 2026_
 
 Reading Pencil is a browser extension that draws a small pencil under the line
 you are reading. This policy says exactly what it does with your data. The
@@ -62,6 +62,9 @@ extension storage (`chrome.storage.local`), on your computer only:
 - **Whether you have seen the short how-to hint** (a count, so it stops after
   a few times), and **whether you have answered the review question**, so it
   is asked at most twice.
+- **Which of the three "Find my pace" passages the welcome page showed you
+  last** (a number, kept by that page), so the next try is a passage you
+  haven't read.
 
 Nothing is stored for pages you read in an Incognito window.
 
@@ -118,9 +121,12 @@ The page has no analytics and sets no cookies.
 Chrome's own PDF viewer lets no extension in, so when you start the pencil on
 a PDF, Reading Pencil opens it in a page of its own, inside the extension. To
 do that, it downloads the PDF from its own address (the one your browser
-opened, or the one kept in "Where you left off"), with your browser's cookies
-for that website, as your browser itself would (so a PDF you had to sign in
-for still opens). The PDF is shown and read on your computer. It is not
+opened, the one a page shows it from, such as Google Drive's or Dropbox's,
+or the one kept in "Where you left off"), with your browser's cookies for
+that website, as your browser itself would (so a PDF you had to sign in for
+still opens). A PDF a page shows from another website is downloaded without
+your cookies, and nothing on your own computer or network is fetched for a
+page out on the web. The PDF is shown and read on your computer. It is not
 stored, and it is not sent anywhere else. A PDF you choose from your computer
 is read from that file and never leaves it; your place in it is kept by its
 name and size, so choosing the same file again takes you back to your line.
