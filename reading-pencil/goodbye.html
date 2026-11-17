@@ -75,6 +75,19 @@ sitemap: false
   .send button:disabled { opacity: .6; cursor: default; }
   .small { margin: 0; font-size: 13px; line-height: 1.45; color: var(--graphite); }
   .small.oops { color: #9a3b1e; }
+  /* The last pages the pencil was tried on, as the extension left them in
+     the link: a row each, with what it found there and an × to take it off. */
+  .tried-head { margin: 22px 0 10px; font: 18px var(--serif); }
+  .tried-head:focus { outline: none; }
+  .tried { margin: 0; padding: 0; list-style: none; border: 1px solid var(--edge); border-radius: 12px; background: #fff; }
+  .tried li { display: flex; align-items: center; gap: 12px; padding: 9px 8px 9px 14px; font: 15px/1.3 var(--sans); }
+  .tried li + li { border-top: 1px solid var(--edge); }
+  .tried .where { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .tried .said { flex: none; font-size: 13px; color: var(--graphite); }
+  .tried .x { flex: none; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: none;
+    color: var(--graphite); font: 18px/1 var(--sans); cursor: pointer; }
+  .tried .x:hover { background: var(--edge); color: var(--ink); }
+  .tried-note { margin: 8px 0 0; font-size: 13px; line-height: 1.45; color: var(--graphite); }
   .back { margin: 26px 0 0; padding-top: 18px; border-top: 1px solid var(--edge); font-size: 14px; color: var(--graphite); }
   .back a { color: var(--ink); text-underline-offset: 3px; text-decoration-color: rgba(38, 37, 31, .35); }
   .thanks p { margin: 0 0 8px; font: 17px/1.55 var(--serif); color: var(--graphite); }
@@ -144,6 +157,13 @@ sitemap: false
         <svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></label>
     </fieldset>
 
+    <div id="tried" hidden>
+      <p class="tried-head" id="triedHead" tabindex="-1">Pages you last tried it on <span class="opt">(optional)</span></p>
+      <ul class="tried" id="triedList" aria-labelledby="triedHead"></ul>
+      <p class="tried-note" id="triedNote">These are the last pages you tried it on, kept only on your computer. They show me where it didn’t work. Remove any you’d rather not send: nothing is sent until you press Send.</p>
+      <input type="hidden" id="pages">
+    </div>
+
     <label class="big" for="more">Anything you’d like to add? <span class="opt">(optional)</span></label>
     <textarea id="more" name="entry.589095699" maxlength="5000" placeholder="What would have made you keep it?"></textarea>
     <input type="hidden" id="version" name="entry.1331648332">
@@ -170,6 +190,56 @@ sitemap: false
   const send = document.getElementById('send')
   document.getElementById('version').value = 'Reading Pencil ' + (asked.get('v') || '?').slice(0, 40)
   document.getElementById('browser').value = (asked.get('b') || '').slice(0, 200)
+
+  // And, after the "#" (which no browser sends to this site), the last pages
+  // the pencil was tried on, with what it found there: shown as words only,
+  // each the reader's to take off, and sent only with the rest, on Send.
+  const PAGES_ENTRY = ''
+  const SAID = { read: 'Read', nothing: 'Nothing to read', out: 'Wasn’t let in', opened: 'Opened to read' }
+  const tried = new URLSearchParams(location.hash.slice(1))
+  const saids = tried.getAll('s')
+  const rows = tried.getAll('p').slice(0, 3).map((where, i) => ({ where: where.slice(0, 100), said: SAID[saids[i]] }))
+    .filter((row) => row.where && row.said)
+  const list = document.getElementById('triedList')
+  const pages = document.getElementById('pages')
+  const keptPages = () => [...list.children].map((li) => li.dataset.page)
+  function showPages() {
+    pages.value = keptPages().join('\n')
+    if (!list.children.length) {
+      list.hidden = true
+      document.getElementById('triedNote').textContent = 'None of them will be sent.'
+    }
+  }
+  for (const row of rows) {
+    const li = document.createElement('li')
+    li.dataset.page = `${row.where} (${row.said.toLowerCase()})`
+    const where = document.createElement('span')
+    where.className = 'where'
+    where.textContent = row.where
+    where.title = row.where
+    const said = document.createElement('span')
+    said.className = 'said'
+    said.textContent = row.said
+    const x = document.createElement('button')
+    x.type = 'button'
+    x.className = 'x'
+    x.textContent = '×'
+    x.setAttribute('aria-label', `Remove ${row.where}`)
+    x.addEventListener('click', () => {
+      const next = li.nextElementSibling || li.previousElementSibling
+      li.remove()
+      showPages()
+      ;(next ? next.querySelector('.x') : document.getElementById('triedHead')).focus()
+    })
+    li.append(where, said, x)
+    list.append(li)
+  }
+  if (rows.length) {
+    document.getElementById('tried').hidden = false
+    if (PAGES_ENTRY) pages.name = PAGES_ENTRY
+    note.textContent = 'Only what you choose, write and keep here is sent, with the version you had and your browser.'
+    showPages()
+  }
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault()

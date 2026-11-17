@@ -7,7 +7,7 @@ permalink: /reading-pencil/privacy/
 
 # Reading Pencil: Privacy Policy
 
-_Last updated: 18 October 2026_
+_Last updated: 17 November 2026_
 
 Reading Pencil is a browser extension that draws a small pencil under the line
 you are reading. This policy says exactly what it does with your data. The
@@ -62,6 +62,11 @@ extension storage (`chrome.storage.local`), on your computer only:
 - **Whether you have seen the short how-to hint** (a count, so it stops after
   a few times), and **whether you have answered the review question**, so it
   is asked at most twice.
+- **The last three pages you tried it on**, for the goodbye page (see
+  "Feedback" below): each one's site and at most two plain words
+  of its address (never anything after a "?", a document's or an
+  article's code, or the name of a file on your computer: that is only
+  "a file on your computer"), and whether the pencil could read it.
 - **Which of the three "Find my pace" passages the welcome page showed you
   last** (a number, kept by that page), so the next try is a passage you
   haven't read.
@@ -111,9 +116,12 @@ Your Google account, if you are signed in to one, is not sent with it.
 If you remove Reading Pencil, Chrome opens a goodbye page on Reading
 Pencil's help site (threatner.github.io), which asks why, if you'd like to
 say. Its address tells the page the version of Reading Pencil you had and
-your browser's name and version. Nothing is sent unless you press Send
-there; then what you chose and wrote, with that version and browser, goes
-to a Google Form of its own (not the feedback form), and nothing else.
+your browser's name and version. It also holds the last three pages you
+tried Reading Pencil on, as kept above, in the part after the "#", which
+your browser never sends to the site: the page shows them to you, and you
+can remove any of them. Nothing is sent unless you press Send there; then
+what you chose and wrote, the pages you kept, and that version and browser
+go to a Google Form of its own (not the feedback form), and nothing else.
 The page has no analytics and sets no cookies.
 
 ## PDFs
